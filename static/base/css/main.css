@@ -1,5 +1,5 @@
 body {
-    font: 20px Calibri, sans-serif;
+    font: 30px Calibri, sans-serif;
     line-height: 1.8;
     color: #000000;
   }
@@ -32,7 +32,7 @@ body {
     border-radius: 0;
     margin-bottom: 0;
     font-size: 12px;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     /* position: fixed; */
   }
   .navbar-nav  li a:hover {
