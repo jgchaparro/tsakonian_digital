@@ -1,7 +1,7 @@
-{% extends 'base/base_new.html' %}
+{% extends 'core/base.html' %}
 
 <!-- add block title -->
-{% block title %}Τσακώνικος μεταφραστής{% endblock %}
+{% block title %}Μεταφραστής - Tsakonian Digital{% endblock %}
 
 {% block styles %}
   <style>
@@ -193,7 +193,6 @@
 
 {% block scripts %}
 <script>
-  console.log('sdd');
   const messageForm = document.querySelector('.message-form');
   const messageInput = document.querySelector('.message-input');
   const messagesList = document.querySelector('.messages-list');

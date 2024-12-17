@@ -6,14 +6,14 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>                        
       </button>
-      {% comment %} <a class="navbar-brand" href="{% url 'home'%}">Tsakonian Digital</a> {% endcomment %}
-      <a class="navbar-brand">Tsakonian Digital</a>
+      <a class="navbar-brand" href="{% url 'dictionary:dictionary_index'%}">Tsakonian Digital</a>
+      <a class="navbar-brand"></a>
   </div>
   <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
        {% comment %} <li><a href="{% url 'home'%}">Home</a></li> {% endcomment %}
-      {% comment %} <li><a href="{% url 'ygfinder'%}">YouGov Finder</a></li> {% endcomment %}
-      {% comment %} <li><a href="{% url 'chatai'%}">Chat AI</a></li> {% endcomment %}
+      <li><a href="{% url 'dictionary:dictionary_index'%}">Λεξικό</a></li>
+      <li><a href="{% url "translator_index" %}">Μεταφραστής</a></li>
       </ul>
   </div>
   </div>
