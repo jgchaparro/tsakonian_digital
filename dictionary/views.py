@@ -11,7 +11,7 @@ from .src.obtain_entry_suggestions import obtain_entry_suggestions
 
 def index(request):
     # Load the template
-    template = loader.get_template("dictionary/pages/index.html")
+    template = loader.get_template("dictionary/index.html")
 
     # Set the context
     text_to_show = """
