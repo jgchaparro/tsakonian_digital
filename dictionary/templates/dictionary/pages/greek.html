@@ -1,0 +1,18 @@
+{% extends "../base/base.html" %}
+
+{% block title %}{{ greek }} - Τσακώνικο λεξικό{% endblock %}
+
+{% block content %}
+<h1>{{ greek }}</h1>
+
+<div class="translation">
+  {% if tsakonian_list %}
+      {% for entry in tsakonian_list %}
+          <p>{{ entry }}</p>
+      {% endfor %}
+  {% else %}
+    {% include "../base/components/suggestions.html" %} 
+  {% endif %}
+
+</div>
+{% endblock %}

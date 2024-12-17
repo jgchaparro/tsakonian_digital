@@ -1,0 +1,128 @@
+<form method="GET" action="{% url 'dictionary:search' %}">
+    <div name="search-options" class="radio-buttons">
+      <div name="direction">
+        <input type="radio" name="direction" id="direction-ts-el" value="TS-EL" checked>
+        <label for="direction-ts-el">ΤΣ-ΕΛ</label>
+    
+        <input type="radio" name="direction" id="direction-el-ts" value="EL-TS">
+        <label for="direction-el-ts">ΕΛ-ΤΣ</label>
+      </div>
+
+      <div name="orthography-options">
+        <input type="radio" name="orthography" id="orthography-kos" value="kostakis" checked>
+        <label for="orthography-kos">Κωστάκης</label>
+
+        <input type="radio" name="orthography" id="orthography-now" value="nowakowski"> 
+        <label for="orthography-now">Νοβακόφσκι</label>
+      </div>
+    </div>
+  
+    <div class="search-bar">
+      <input type="text" name="q" placeholder="Αναζήτηση">
+      <button type="submit">Υποβολή</button>
+    </div>
+
+    <div class="letter-buttons">
+      <button onclick="pasteKh()">κ̇</button>
+      <button onclick="pasteTh()">τ̇</button>
+      <button onclick="pastePh()">π̇</button>
+      <button onclick="pasteNi()">ν̇</button>
+      <button onclick="pasteNni()">ν̂</button>
+      <button onclick="pasteLi()">λ̣</button>
+      <button onclick="pasteSh()">σ̌</button>
+      <button onclick="pasteZh()">ζ̌</button>
+      <button onclick="pasteTs()">τ͡σ</button>
+    </div>
+    <br>
+  </form> 
+
+  <!-- Scripts -->
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const orthography = urlParams.get('orthography');
+  
+    const radioButtons = document.querySelectorAll('input[name="orthography"]');
+  
+    radioButtons.forEach(radioButton => {
+      if (radioButton.value === orthography) {
+        radioButton.checked = true;
+      }
+    });
+  </script>
+
+  <script>
+    const urlParams2 = new URLSearchParams(window.location.search);
+    const direction = urlParams2.get('direction');
+  
+    const radioButtons2 = document.querySelectorAll('input[name="direction"]');
+  
+    radioButtons2.forEach(radioButton2 => {
+      if (radioButton2.value === direction) {
+        radioButton2.checked = true;
+      }
+    });
+  </script>
+
+  <script>
+    function pasteSh() {
+      const searchBarInput = document.querySelector('input[name="q"]');
+      searchBarInput.value = searchBarInput.value + "σ̌";
+      event.preventDefault(); // Prevent form submission
+    }
+  </script>
+  <script>
+    function pasteZh() {
+      const searchBarInput = document.querySelector('input[name="q"]');
+      searchBarInput.value = searchBarInput.value + "ζ̌";
+      event.preventDefault(); // Prevent form submission
+    }
+  </script>
+  <script>
+    function pasteKh() {
+      const searchBarInput = document.querySelector('input[name="q"]');
+      searchBarInput.value = searchBarInput.value + "κ̇";
+      event.preventDefault(); // Prevent form submission
+    }
+  </script>
+  <script>
+    function pasteTh() {
+      const searchBarInput = document.querySelector('input[name="q"]');
+      searchBarInput.value = searchBarInput.value + "τ̇";
+      event.preventDefault(); // Prevent form submission
+    }
+  </script>
+  <script>
+    function pastePh() {
+      const searchBarInput = document.querySelector('input[name="q"]');
+      searchBarInput.value = searchBarInput.value + "π̇";
+      event.preventDefault(); // Prevent form submission
+    }
+  </script>
+  <script>
+    function pasteTs() {
+      const searchBarInput = document.querySelector('input[name="q"]');
+      searchBarInput.value = searchBarInput.value + "τ͡σ";
+      event.preventDefault(); // Prevent form submission
+    }
+  </script>
+  <script>
+    function pasteNi() {
+      const searchBarInput = document.querySelector('input[name="q"]');
+      searchBarInput.value = searchBarInput.value + "ν̇";
+      event.preventDefault(); // Prevent form submission
+    }
+  </script>
+  <script>
+    function pasteNni() {
+      const searchBarInput = document.querySelector('input[name="q"]');
+      searchBarInput.value = searchBarInput.value + "ν̂";
+      event.preventDefault(); // Prevent form submission
+    }
+  </script>
+  <script>
+    function pasteLi() {
+      const searchBarInput = document.querySelector('input[name="q"]');
+      searchBarInput.value = searchBarInput.value + "λ̣";
+      event.preventDefault(); // Prevent form submission
+    }
+  </script>
