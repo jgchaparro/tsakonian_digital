@@ -4,6 +4,7 @@
   }
   
   .search-bar {
+    font-family: Calibri;
     text-align: center;
     margin-top: 10px;
     font-size: 20px;
@@ -13,7 +14,7 @@
   
   .search-bar input {
     width: 80%;
-    padding: 10px;
+    padding-left: 10px;
     border: 3px solid #ccc;
     margin-right: 5px;
     border-radius: 30px;
@@ -22,9 +23,9 @@
   .search-bar button {
     background-color: #085fa7;
     color: #fff;
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 16px;
   }
   
   .letter-buttons {
@@ -36,15 +37,14 @@
   .letter-buttons button {
     font-family: Calibri;
     font-size: 20px;
-    padding: 10px;
     font-weight: 600;
   }
   
   .index_text, .translation{
       padding-left: 20%;
+      padding-right: 20%;
   }
   
-
   h1 {
     text-align: center;
 
