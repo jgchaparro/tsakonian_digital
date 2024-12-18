@@ -1,3 +1,5 @@
+{% load static %}
+
 <nav class="navbar navbar-default">
   <div class="container">
   <div class="navbar-header">
@@ -6,8 +8,10 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="{% url 'dictionary:dictionary_index'%}">Tsakonian Digital</a>
-      <a class="navbar-brand"></a>
+      <a class="navbar-brand" href="{% url 'dictionary:dictionary_index'%}">
+        <img src="{% static 'base/imgs/TD_logo_small_no_bg.png' %}" alt="Tsakonian Digital logo" style="height: 50px; display: inline-block; vertical-align: middle; padding: 0;">
+        <span style="display: inline-block; vertical-align: middle;">Tsakonian Digital</span>
+      </a>
   </div>
   <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
