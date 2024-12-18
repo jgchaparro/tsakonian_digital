@@ -1,15 +1,12 @@
 {% load static %}
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" style="height: 50px; vertical-align: middle; padding: 0px;">
   <div class="container">
   <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>                        
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">                      
       </button>
       <a class="navbar-brand" href="{% url 'dictionary:dictionary_index'%}">
-        <img src="{% static 'base/imgs/TD_logo_small_no_bg.png' %}" alt="Tsakonian Digital logo" style="height: 50px; display: inline-block; vertical-align: middle; padding: 0;">
+        <img src="{% static 'base/imgs/TD_logo_small_no_bg.png' %}" alt="Tsakonian Digital logo" style="height: 20px; display: inline-block; vertical-align: middle">
         <span style="display: inline-block; vertical-align: middle;">Tsakonian Digital</span>
       </a>
   </div>
