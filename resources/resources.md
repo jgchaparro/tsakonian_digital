@@ -1,0 +1,1 @@
+* [Deploying to Azure](https://www.youtube.com/watch?v=D6Wyk9q2JM0&ab_channel=MicrosoftDeveloper)
