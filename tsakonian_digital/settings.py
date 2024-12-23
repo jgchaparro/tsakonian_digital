@@ -26,7 +26,12 @@ SECRET_KEY = 'django-insecure-jmo0e^ubjsyg8totx$8o%ayusrn@8-&6if=ix8#5)bn(8+)q0o
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["tsakoniandigital.com", "tsakoniandigital-dcdtawcgbxdta0h2.westeurope-01.azurewebsites.net"]
+ALLOWED_HOSTS = [
+    "tsakoniandigital.com", 
+    "tsakoniandigital-dcdtawcgbxdta0h2.westeurope-01.azurewebsites.net",
+    "49.12.72.67",
+    "dict.tsakonianarchives.gr",
+    "127.0.0.1"]
 
 
 # Application definition
@@ -121,9 +126,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-# STATICFILES_DIRS = [
-#     BASE_DIR / 'static',
-# ]
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+]
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'  
 STATIC_ROOT = BASE_DIR / 'staticfiles'
